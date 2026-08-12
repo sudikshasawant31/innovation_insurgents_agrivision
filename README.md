@@ -307,12 +307,12 @@ node_modules/
 
 The complete project presentation is available here:
 
-👉 **[View / Download Project PPT](PASTE-YOUR-PPT-LINK-HERE)**
+👉 **[View / Download Project PPT](https://drive.google.com/file/d/1FqhQGA6CkFWhezAyIj4V3eQsGomMNyxo/view?usp=sharing)**
 
 **PPT Link:**
 
 ```text
-https://drive.google.com/drive/folders/1GRxlHENpNljbLaPy2eTBzFDczc2ifQXj?usp=drive_link
+https://drive.google.com/file/d/1FqhQGA6CkFWhezAyIj4V3eQsGomMNyxo/view?usp=sharing
 ```
 
 ---

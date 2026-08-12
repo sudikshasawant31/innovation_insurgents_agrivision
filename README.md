@@ -1,392 +1,42 @@
-# 🌱 AgriVision AI
+# AgriVision AI
 
-### AI-Powered Crop Disease Detection & Smart Farming Assistant
+Premium Next.js farm dashboard with a 3D digital-twin scene, camera preview, disease-analysis workflow, multilingual-ready assistant, weather risk views, remedies, nutrient plans, field heatmap, QR profile, scheme cards, and offline queue UX.
 
-> **Empowering farmers with Artificial Intelligence for faster, smarter, and accessible crop disease detection.**
+## Run the ML service
 
----
-
-## 📌 Overview
-
-**AgriVision AI** is an AI-powered agricultural assistant designed to help farmers identify crop diseases and receive useful recommendations through an easy-to-use digital platform.
-
-The system combines **Artificial Intelligence, Computer Vision, Voice Assistance, and Multilingual Interaction** to make agricultural technology more accessible to farmers.
-
-Farmers can upload an image of an affected crop or leaf, and the system analyzes it to identify potential diseases and provide relevant information and recommendations.
-
----
-
-## 🎯 Problem Statement
-
-Farmers often face difficulties in identifying crop diseases at an early stage due to:
-
-* Lack of immediate access to agricultural experts
-* Difficulty identifying diseases from symptoms
-* Limited availability of agricultural resources
-* Language and accessibility barriers
-* Delayed disease detection leading to crop losses
-
-AgriVision AI aims to address these challenges through an accessible AI-based solution.
-
----
-
-## 💡 Our Solution
-
-AgriVision AI provides a single platform where farmers can:
-
-🌿 Upload crop images
-🔍 Detect potential crop diseases
-📋 Understand disease symptoms
-💊 Get treatment and prevention guidance
-🎙️ Interact using voice commands
-🌐 Access multilingual assistance
-👨‍🌾 Use a simple farmer-friendly interface
-
----
-
-# ✨ Key Features
-
-## 🌿 AI Crop Disease Detection
-
-Upload an image of an affected crop or leaf and use AI-powered image analysis to identify the potential disease.
-
-### Provides:
-
-* Disease identification
-* Disease confidence / prediction
-* Symptoms
-* Possible causes
-* Prevention methods
-* Treatment recommendations
-
----
-
-## 🎙️ Voice Assistant
-
-AgriVision AI includes a voice-based assistant that allows farmers to interact with the system naturally.
-
-### Features:
-
-* 🎤 Voice input
-* 🔊 Voice responses
-* 🌐 Multilingual interaction
-* 👨‍🌾 Farmer-friendly communication
-
----
-
-## 🌐 Multilingual Support
-
-The platform is designed to support regional languages so that farmers who are not comfortable with English can interact with the system more easily.
-
----
-
-## 📊 Farmer Dashboard
-
-The dashboard provides an organized interface for accessing:
-
-* Crop disease detection
-* Disease history
-* Recommendations
-* Voice assistant
-* Agricultural information
-
----
-
-## 📱 Responsive Design
-
-The interface is designed to provide a smooth experience across:
-
-* 💻 Desktop
-* 📱 Mobile
-* 📟 Tablet
-
----
-
-# 🏗️ System Architecture
-
-```text
-                         👨‍🌾 FARMER
-                              │
-                              ▼
-                  ┌──────────────────────┐
-                  │   AgriVision AI      │
-                  │      Dashboard       │
-                  └──────────┬───────────┘
-                             │
-              ┌──────────────┴──────────────┐
-              │                             │
-              ▼                             ▼
-      ┌────────────────┐           ┌─────────────────┐
-      │  Crop Image    │           │ Voice Assistant │
-      │    Upload      │           │                 │
-      └───────┬────────┘           └────────┬────────┘
-              │                             │
-              ▼                             ▼
-      ┌────────────────────────────────────────────┐
-      │              AI / ML ANALYSIS              │
-      │                                             │
-      │       Computer Vision & Image Analysis     │
-      └────────────────────┬───────────────────────┘
-                           │
-                           ▼
-                 ┌─────────────────────┐
-                 │ Disease Detection    │
-                 └──────────┬──────────┘
-                            │
-                            ▼
-              ┌──────────────────────────┐
-              │ Disease Information      │
-              │ & Recommendations        │
-              └────────────┬─────────────┘
-                           │
-                           ▼
-                      👨‍🌾 FARMER
+```powershell
+cd backend
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+python train.py
+uvicorn app.main:app --reload --port 8000
 ```
 
----
+`train.py` downloads `snikhilrao/crop-disease-detection-dataset` using `kagglehub`, trains EfficientNetB0 on the detected class directories, and saves `models/plant_disease.keras` plus labels. The API refuses scans until these real model artifacts exist; it never fabricates a diagnosis.
 
-# 🔄 How It Works
+## Run the web app
 
-### 1️⃣ Upload Crop Image
-
-The farmer uploads an image of the affected crop or leaf.
-
-### 2️⃣ Image Processing
-
-The uploaded image is processed by the AI-based analysis system.
-
-### 3️⃣ Disease Detection
-
-The system analyzes visual characteristics and identifies the most likely crop disease.
-
-### 4️⃣ Disease Information
-
-The farmer receives information about the detected disease, including symptoms and possible causes.
-
-### 5️⃣ Recommendations
-
-The system provides appropriate prevention and treatment guidance.
-
-### 6️⃣ Voice Interaction
-
-The farmer can also interact with the assistant through voice commands.
-
----
-
-# 🛠️ Technology Stack
-
-## Frontend
-
-* Next.js
-* React
-* TypeScript
-* Tailwind CSS
-
-## Artificial Intelligence
-
-* Computer Vision
-* Image Classification
-* AI-powered Image Analysis
-* Machine Learning
-
-## Backend / APIs
-
-* Node.js
-* REST APIs
-
-## Other Technologies
-
-* Web Speech API
-* Authentication
-* Cloud Services
-* Git
-* GitHub
-
----
-
-# 📂 Project Structure
-
-```text
-AgriVision-AI/
-│
-├── app/
-│   ├── page.tsx
-│   ├── layout.tsx
-│   └── ...
-│
-├── components/
-│   ├── agrivision-dashboard.tsx
-│   ├── voice.tsx
-│   └── ...
-│
-├── public/
-│   ├── images/
-│   └── ...
-│
-├── lib/
-│   └── ...
-│
-├── .env.local
-├── .gitignore
-├── package.json
-├── tsconfig.json
-└── README.md
+```powershell
+Copy-Item .env.example .env.local
+pnpm install
+pnpm dev
 ```
 
----
+Open `http://localhost:3000`. The crop-analysis upload routes to FastAPI; Puter powers the browser assistant with `gpt-5.4-nano` without an API key. For production, deploy the Next app to Vercel and the `backend` service to Render/Railway, then set `ML_SERVICE_URL` to the public backend URL.
 
-# 🚀 Getting Started
+## Farmer login and map
 
-## 1. Clone the Repository
+Sign-in has two paths, both of which end with the browser holding a normal Firebase session (so the rest of the app — Firestore profile, farm data — doesn't need to change):
 
-```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-```
+1. **Mobile OTP via Twilio Verify.** The client calls `POST /api/auth/send-otp` and `POST /api/auth/verify-otp`. Those routes talk to Twilio's Verify API, and once the code checks out, the server mints a Firebase custom sign-in token for that phone number.
+2. **Google sign-in via your own OAuth client.** Clicking "Continue with Google" redirects to `GET /api/auth/google`, which sends the browser through Google's OAuth consent screen using your own `GOOGLE_CLIENT_ID`/`GOOGLE_CLIENT_SECRET` (not Firebase's built-in Google provider). `GET /api/auth/google/callback` exchanges the code, reads the Google profile, and mints a Firebase custom token, then redirects to `/auth/complete` where the client signs into Firebase with that token.
 
-## 2. Navigate to the Project
+Setup:
 
-```bash
-cd YOUR-REPOSITORY
-```
+1. **Firebase project.** Create a Firebase web app and copy its four public config values into `NEXT_PUBLIC_FIREBASE_*` in `.env.local`.
+2. **Firebase Admin.** In Firebase console → Project settings → Service accounts, generate a private key. Either paste the whole downloaded JSON into `FIREBASE_SERVICE_ACCOUNT_JSON` (as one line), or split it into `FIREBASE_PROJECT_ID`, `FIREBASE_CLIENT_EMAIL`, and `FIREBASE_PRIVATE_KEY`.
+3. **Twilio Verify.** Create a [Verify Service](https://console.twilio.com/us1/develop/verify/services) in the Twilio console, then set `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, and `TWILIO_VERIFY_SERVICE_SID`.
+4. **Google OAuth client.** In [Google Cloud Console → Credentials](https://console.cloud.google.com/apis/credentials), create an OAuth 2.0 Web application client. Add `http://localhost:3000/api/auth/google/callback` (and your production URL's equivalent) as an authorized redirect URI, then set `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET`.
 
-## 3. Install Dependencies
-
-```bash
-npm install
-```
-
-## 4. Configure Environment Variables
-
-Create a `.env.local` file:
-
-```env
-NEXT_PUBLIC_API_URL=
-
-NEXTAUTH_URL=
-NEXTAUTH_SECRET=
-
-AI_API_KEY=
-```
-
-> ⚠️ **Do not upload API keys or `.env.local` to GitHub.**
-
-## 5. Start the Development Server
-
-```bash
-npm run dev
-```
-
-The application will be available at:
-
-```text
-http://localhost:3000
-```
-
----
-
-# 🔐 Environment Variables
-
-Make sure sensitive environment variables are stored locally and are not committed to the repository.
-
-Recommended `.gitignore`:
-
-```gitignore
-.env
-.env.local
-.env.*.local
-
-node_modules/
-.next/
-```
-
----
-
-# 📚 Project Resources
-
-## 📊 Project Presentation
-
-The complete project presentation is available here:
-
-👉 **[View / Download Project PPT](https://drive.google.com/file/d/1FqhQGA6CkFWhezAyIj4V3eQsGomMNyxo/view?usp=sharing)**
-
-**PPT Link:**
-
-```text
-https://drive.google.com/file/d/1FqhQGA6CkFWhezAyIj4V3eQsGomMNyxo/view?usp=sharing
-```
-
----
-
-## 🎥 Project Demonstration Video
-
-Watch the complete demonstration of AgriVision AI:
-
-👉 **[Watch Project Demo Video](https://drive.google.com/drive/folders/1GRxlHENpNljbLaPy2eTBzFDczc2ifQXj?usp=drive_link)**
-
-**Video Link:**
-
-```text
-https://drive.google.com/drive/folders/1GRxlHENpNljbLaPy2eTBzFDczc2ifQXj?usp=drive_link
-```
----
-
-
-# 🎯 Objectives
-
-The major objectives of AgriVision AI are:
-
-1. Detect crop diseases using Artificial Intelligence.
-2. Provide farmers with quick and understandable disease information.
-3. Provide treatment and prevention recommendations.
-4. Enable voice-based interaction.
-5. Support multilingual communication.
-6. Create an accessible and farmer-friendly agricultural platform.
-7. Reduce delays in identifying crop diseases.
-
----
-
-# 🌾 Impact
-
-AgriVision AI aims to contribute towards:
-
-* Early crop disease detection
-* Reduced crop losses
-* Improved farmer awareness
-* Faster agricultural decision-making
-* Better access to agricultural information
-* Increased accessibility of AI technology in rural areas
-
----
-
-# 🤝 Team
-
-### Team AgriVision AI
-
-**Team Members**
-
-* 👩‍💻 Sudiksha Sawant
-* 👨‍💻 Om Rane
-
----
-
-# 📜 License
-
-This project is developed for **educational, research, innovation, and demonstration purposes**.
-
----
-
-# ⭐ Support
-
-If you find **AgriVision AI** useful or interesting, consider giving this repository a ⭐ on GitHub!
-
----
-
-<div align="center">
-
-### 🌱 AgriVision AI
-
-**AI for Smarter Farming • Technology for Better Agriculture**
-
-🌾 **Detect. Understand. Act.**
-
-</div>
+The field heatmap is an interactive India map: click a field marker to inspect its health, then use the external-link button to open the exact point in Google Maps.

@@ -1,0 +1,44 @@
+{
+  "lastValidatedTimestamp": 1786487317902,
+  "projects": {
+    "C:\\Users\\Sudiksha\\Downloads\\agri-vision-ai-twilio-google-auth\\agri-vision-ai-realtime-profiles": {
+      "name": "my-project",
+      "version": "0.1.0"
+    }
+  },
+  "pnpmfiles": [],
+  "settings": {
+    "allowBuilds": {
+      "@firebase/util": false,
+      "esbuild": false,
+      "msw": false,
+      "protobufjs": false
+    },
+    "autoInstallPeers": true,
+    "catalogs": {},
+    "dedupeDirectDeps": false,
+    "dedupeInjectedDeps": true,
+    "dedupePeerDependents": true,
+    "dedupePeers": false,
+    "dev": true,
+    "excludeLinksFromLockfile": false,
+    "hoistPattern": [
+      "*"
+    ],
+    "hoistWorkspacePackages": true,
+    "injectWorkspacePackages": false,
+    "linkWorkspacePackages": false,
+    "minimumReleaseAge": 1440,
+    "minimumReleaseAgeIgnoreMissingTime": true,
+    "nodeLinker": "isolated",
+    "optional": true,
+    "peersSuffixMaxLength": 1000,
+    "preferWorkspacePackages": false,
+    "production": true,
+    "publicHoistPattern": [],
+    "workspacePackagePatterns": [
+      "."
+    ]
+  },
+  "filteredInstall": false
+}

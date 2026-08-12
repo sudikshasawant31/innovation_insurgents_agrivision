@@ -312,7 +312,7 @@ The complete project presentation is available here:
 **PPT Link:**
 
 ```text
-PASTE-YOUR-PPT-LINK-HERE
+https://drive.google.com/drive/folders/1GRxlHENpNljbLaPy2eTBzFDczc2ifQXj?usp=drive_link
 ```
 
 ---
@@ -329,10 +329,6 @@ Watch the complete demonstration of AgriVision AI:
 PASTE-YOUR-VIDEO-LINK-HERE
 ```
 ---
-
-## 💻 GitHub Repository
-
-👉 **[View Source Code](PASTE-YOUR-GITHUB-REPOSITORY-LINK-HERE)**
 
 
 # 🎯 Objectives

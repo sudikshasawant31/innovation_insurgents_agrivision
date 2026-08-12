@@ -358,24 +358,6 @@ AgriVision AI aims to contribute towards:
 
 ---
 
-# 🔮 Future Scope
-
-Future improvements may include:
-
-* 🤖 Improved disease classification accuracy
-* 🌾 Support for additional crops and diseases
-* 📍 Location-based agricultural recommendations
-* 🌦️ Weather-based disease prediction
-* 🧪 Fertilizer recommendations
-* 🗣️ Additional regional languages
-* 📱 Dedicated Android / iOS application
-* 📡 Offline functionality for low-connectivity areas
-* 👨‍🌾 Expert consultation
-* 📈 Long-term crop health monitoring
-* 🛰️ Satellite and remote-sensing based crop monitoring
-
----
-
 # 🤝 Team
 
 ### Team AgriVision AI

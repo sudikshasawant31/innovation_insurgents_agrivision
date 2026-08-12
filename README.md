@@ -321,7 +321,7 @@ PASTE-YOUR-PPT-LINK-HERE
 
 Watch the complete demonstration of AgriVision AI:
 
-👉 **[Watch Project Demo Video](PASTE-YOUR-VIDEO-LINK-HERE)**
+👉 **[Watch Project Demo Video](https://drive.google.com/drive/folders/1GRxlHENpNljbLaPy2eTBzFDczc2ifQXj?usp=drive_link)**
 
 **Video Link:**
 

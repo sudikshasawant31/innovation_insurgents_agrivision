@@ -326,7 +326,7 @@ Watch the complete demonstration of AgriVision AI:
 **Video Link:**
 
 ```text
-PASTE-YOUR-VIDEO-LINK-HERE
+https://drive.google.com/drive/folders/1GRxlHENpNljbLaPy2eTBzFDczc2ifQXj?usp=drive_link
 ```
 ---
 

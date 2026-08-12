@@ -328,66 +328,12 @@ Watch the complete demonstration of AgriVision AI:
 ```text
 PASTE-YOUR-VIDEO-LINK-HERE
 ```
-
----
-
-## 🌐 Live Project
-
-Try the deployed application:
-
-👉 **[Open AgriVision AI](PASTE-YOUR-LIVE-DEMO-LINK-HERE)**
-
-**Live Website:**
-
-```text
-PASTE-YOUR-LIVE-DEMO-LINK-HERE
-```
-
 ---
 
 ## 💻 GitHub Repository
 
 👉 **[View Source Code](PASTE-YOUR-GITHUB-REPOSITORY-LINK-HERE)**
 
----
-
-# 📸 Screenshots
-
-Add screenshots of your application below.
-
-### 🏠 Dashboard
-
-```text
-ADD DASHBOARD SCREENSHOT HERE
-```
-
-### 🌿 Crop Disease Detection
-
-```text
-ADD DISEASE DETECTION SCREENSHOT HERE
-```
-
-### 🎙️ Voice Assistant
-
-```text
-ADD VOICE ASSISTANT SCREENSHOT HERE
-```
-
-### 📊 Disease History
-
-```text
-ADD HISTORY SCREENSHOT HERE
-```
-
-> You can upload screenshots directly to the repository and use relative Markdown image paths, which GitHub supports.
-
-Example:
-
-```markdown
-![AgriVision AI Dashboard](./screenshots/dashboard.png)
-```
-
----
 
 # 🎯 Objectives
 

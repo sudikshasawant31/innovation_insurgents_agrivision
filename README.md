@@ -1,217 +1,210 @@
-# 🌱 AgriVision AI — AI-Powered Crop Disease Detection
+# 🌱 AgriVision AI
 
-An AI-powered agricultural assistant designed to help farmers **detect crop diseases, understand symptoms, and receive actionable recommendations** using image analysis and intelligent assistance.
+### AI-Powered Crop Disease Detection & Smart Farming Assistant
 
-## 🚀 Overview
-
-**AgriVision AI** combines Artificial Intelligence, computer vision, and a farmer-friendly interface to make crop disease detection more accessible.
-
-Farmers can upload an image of an affected crop/leaf, and the system analyzes it to identify potential diseases and provide useful information such as:
-
-* 🌿 Disease identification
-* 🔍 Symptom analysis
-* 💊 Recommended treatment
-* 🌾 Crop-specific guidance
-* 🌦️ Agricultural assistance
-* 🎙️ Voice-based interaction
-* 🌐 Multilingual support
-
-The goal is to provide farmers with a simple and accessible digital assistant for faster agricultural decision-making.
+> **Empowering farmers with Artificial Intelligence for faster, smarter, and accessible crop disease detection.**
 
 ---
 
-## ✨ Features
+## 📌 Overview
 
-### 🌿 AI Crop Disease Detection
+**AgriVision AI** is an AI-powered agricultural assistant designed to help farmers identify crop diseases and receive useful recommendations through an easy-to-use digital platform.
 
-Upload a crop/leaf image and use AI-based image analysis to identify possible diseases.
+The system combines **Artificial Intelligence, Computer Vision, Voice Assistance, and Multilingual Interaction** to make agricultural technology more accessible to farmers.
 
-### 📊 Disease Information
+Farmers can upload an image of an affected crop or leaf, and the system analyzes it to identify potential diseases and provide relevant information and recommendations.
 
-Provides information about:
+---
 
-* Disease name
+## 🎯 Problem Statement
+
+Farmers often face difficulties in identifying crop diseases at an early stage due to:
+
+* Lack of immediate access to agricultural experts
+* Difficulty identifying diseases from symptoms
+* Limited availability of agricultural resources
+* Language and accessibility barriers
+* Delayed disease detection leading to crop losses
+
+AgriVision AI aims to address these challenges through an accessible AI-based solution.
+
+---
+
+## 💡 Our Solution
+
+AgriVision AI provides a single platform where farmers can:
+
+🌿 Upload crop images
+🔍 Detect potential crop diseases
+📋 Understand disease symptoms
+💊 Get treatment and prevention guidance
+🎙️ Interact using voice commands
+🌐 Access multilingual assistance
+👨‍🌾 Use a simple farmer-friendly interface
+
+---
+
+# ✨ Key Features
+
+## 🌿 AI Crop Disease Detection
+
+Upload an image of an affected crop or leaf and use AI-powered image analysis to identify the potential disease.
+
+### Provides:
+
+* Disease identification
+* Disease confidence / prediction
 * Symptoms
 * Possible causes
 * Prevention methods
 * Treatment recommendations
 
-### 🎙️ Voice Assistant
+---
 
-Farmers can interact with the application using voice input and receive spoken responses.
+## 🎙️ Voice Assistant
 
-### 🌐 Multilingual Support
+AgriVision AI includes a voice-based assistant that allows farmers to interact with the system naturally.
 
-Designed to support farmers in regional languages, making the system easier to use for non-English speakers.
+### Features:
 
-### 👨‍🌾 Farmer-Friendly Dashboard
-
-A simple and intuitive interface designed specifically for agricultural use.
-
-### 📱 Responsive Interface
-
-The application is designed to work across desktop and mobile devices.
+* 🎤 Voice input
+* 🔊 Voice responses
+* 🌐 Multilingual interaction
+* 👨‍🌾 Farmer-friendly communication
 
 ---
 
-## 🛠️ Technology Stack
+## 🌐 Multilingual Support
 
-### Frontend
+The platform is designed to support regional languages so that farmers who are not comfortable with English can interact with the system more easily.
+
+---
+
+## 📊 Farmer Dashboard
+
+The dashboard provides an organized interface for accessing:
+
+* Crop disease detection
+* Disease history
+* Recommendations
+* Voice assistant
+* Agricultural information
+
+---
+
+## 📱 Responsive Design
+
+The interface is designed to provide a smooth experience across:
+
+* 💻 Desktop
+* 📱 Mobile
+* 📟 Tablet
+
+---
+
+# 🏗️ System Architecture
+
+```text
+                         👨‍🌾 FARMER
+                              │
+                              ▼
+                  ┌──────────────────────┐
+                  │   AgriVision AI      │
+                  │      Dashboard       │
+                  └──────────┬───────────┘
+                             │
+              ┌──────────────┴──────────────┐
+              │                             │
+              ▼                             ▼
+      ┌────────────────┐           ┌─────────────────┐
+      │  Crop Image    │           │ Voice Assistant │
+      │    Upload      │           │                 │
+      └───────┬────────┘           └────────┬────────┘
+              │                             │
+              ▼                             ▼
+      ┌────────────────────────────────────────────┐
+      │              AI / ML ANALYSIS              │
+      │                                             │
+      │       Computer Vision & Image Analysis     │
+      └────────────────────┬───────────────────────┘
+                           │
+                           ▼
+                 ┌─────────────────────┐
+                 │ Disease Detection    │
+                 └──────────┬──────────┘
+                            │
+                            ▼
+              ┌──────────────────────────┐
+              │ Disease Information      │
+              │ & Recommendations        │
+              └────────────┬─────────────┘
+                           │
+                           ▼
+                      👨‍🌾 FARMER
+```
+
+---
+
+# 🔄 How It Works
+
+### 1️⃣ Upload Crop Image
+
+The farmer uploads an image of the affected crop or leaf.
+
+### 2️⃣ Image Processing
+
+The uploaded image is processed by the AI-based analysis system.
+
+### 3️⃣ Disease Detection
+
+The system analyzes visual characteristics and identifies the most likely crop disease.
+
+### 4️⃣ Disease Information
+
+The farmer receives information about the detected disease, including symptoms and possible causes.
+
+### 5️⃣ Recommendations
+
+The system provides appropriate prevention and treatment guidance.
+
+### 6️⃣ Voice Interaction
+
+The farmer can also interact with the assistant through voice commands.
+
+---
+
+# 🛠️ Technology Stack
+
+## Frontend
 
 * Next.js
 * React
 * TypeScript
 * Tailwind CSS
 
-### Artificial Intelligence
+## Artificial Intelligence
 
 * Computer Vision
 * Image Classification
-* AI-based Disease Detection
+* AI-powered Image Analysis
+* Machine Learning
 
-### Backend / APIs
+## Backend / APIs
 
 * Node.js
 * REST APIs
 
-### Other Technologies
+## Other Technologies
 
 * Web Speech API
 * Authentication
 * Cloud Services
-* Git & GitHub
+* Git
+* GitHub
 
 ---
 
-## 🏗️ System Architecture
-
-```text
-                 ┌─────────────────────┐
-                 │       Farmer        │
-                 └──────────┬──────────┘
-                            │
-                            ▼
-                 ┌─────────────────────┐
-                 │   AgriVision AI     │
-                 │     Dashboard       │
-                 └──────────┬──────────┘
-                            │
-              ┌─────────────┴─────────────┐
-              │                           │
-              ▼                           ▼
-      ┌────────────────┐         ┌────────────────┐
-      │ Image Upload   │         │ Voice Assistant│
-      └───────┬────────┘         └───────┬────────┘
-              │                          │
-              ▼                          ▼
-      ┌────────────────────────────────────────┐
-      │          AI / ML Analysis              │
-      │                                        │
-      │   Crop & Disease Identification        │
-      └──────────────────┬─────────────────────┘
-                         │
-                         ▼
-              ┌─────────────────────┐
-              │ Disease Information │
-              │ & Recommendations   │
-              └─────────────────────┘
-                         │
-                         ▼
-                  👨‍🌾 Farmer
-```
-
----
-
-## 📸 How It Works
-
-### Step 1 — Upload Image
-
-The farmer uploads an image of the affected crop or leaf.
-
-### Step 2 — Image Analysis
-
-The AI system processes the image and analyzes visual symptoms.
-
-### Step 3 — Disease Detection
-
-The model predicts the most likely crop disease.
-
-### Step 4 — Recommendations
-
-The system provides relevant information and recommended actions.
-
-### Step 5 — Voice Assistance
-
-Farmers can also interact with the system using voice commands.
-
----
-
-## 💻 Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-```
-
-Navigate to the project directory:
-
-```bash
-cd YOUR-REPOSITORY
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Run the development server:
-
-```bash
-npm run dev
-```
-
-Open the application in your browser:
-
-```text
-http://localhost:3000
-```
-
----
-
-## 🔐 Environment Variables
-
-Create a `.env.local` file in the root directory.
-
-```env
-# Add your environment variables here
-
-NEXT_PUBLIC_API_URL=
-
-# Authentication
-NEXTAUTH_URL=
-NEXTAUTH_SECRET=
-
-# AI / API configuration
-AI_API_KEY=
-```
-
-> ⚠️ Never upload `.env.local` or API keys to GitHub.
-
-Make sure your `.gitignore` contains:
-
-```gitignore
-.env
-.env.local
-.env.*.local
-node_modules/
-.next/
-```
-
----
-
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
 AgriVision-AI/
@@ -242,47 +235,234 @@ AgriVision-AI/
 
 ---
 
-## 🎯 Objective
+# 🚀 Getting Started
 
-The primary objective of AgriVision AI is to make **AI-powered crop disease detection accessible to farmers** through an easy-to-use digital platform.
+## 1. Clone the Repository
 
-The project aims to reduce the dependency on immediate expert availability and help farmers make faster and more informed decisions regarding crop health.
+```bash
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+```
+
+## 2. Navigate to the Project
+
+```bash
+cd YOUR-REPOSITORY
+```
+
+## 3. Install Dependencies
+
+```bash
+npm install
+```
+
+## 4. Configure Environment Variables
+
+Create a `.env.local` file:
+
+```env
+NEXT_PUBLIC_API_URL=
+
+NEXTAUTH_URL=
+NEXTAUTH_SECRET=
+
+AI_API_KEY=
+```
+
+> ⚠️ **Do not upload API keys or `.env.local` to GitHub.**
+
+## 5. Start the Development Server
+
+```bash
+npm run dev
+```
+
+The application will be available at:
+
+```text
+http://localhost:3000
+```
 
 ---
 
-## 🔮 Future Scope
+# 🔐 Environment Variables
 
-Future improvements can include:
+Make sure sensitive environment variables are stored locally and are not committed to the repository.
 
-* 🤖 Improved AI disease classification
-* 🌾 Support for more crops and diseases
+Recommended `.gitignore`:
+
+```gitignore
+.env
+.env.local
+.env.*.local
+
+node_modules/
+.next/
+```
+
+---
+
+# 📚 Project Resources
+
+## 📊 Project Presentation
+
+The complete project presentation is available here:
+
+👉 **[View / Download Project PPT](PASTE-YOUR-PPT-LINK-HERE)**
+
+**PPT Link:**
+
+```text
+PASTE-YOUR-PPT-LINK-HERE
+```
+
+---
+
+## 🎥 Project Demonstration Video
+
+Watch the complete demonstration of AgriVision AI:
+
+👉 **[Watch Project Demo Video](PASTE-YOUR-VIDEO-LINK-HERE)**
+
+**Video Link:**
+
+```text
+PASTE-YOUR-VIDEO-LINK-HERE
+```
+
+---
+
+## 🌐 Live Project
+
+Try the deployed application:
+
+👉 **[Open AgriVision AI](PASTE-YOUR-LIVE-DEMO-LINK-HERE)**
+
+**Live Website:**
+
+```text
+PASTE-YOUR-LIVE-DEMO-LINK-HERE
+```
+
+---
+
+## 💻 GitHub Repository
+
+👉 **[View Source Code](PASTE-YOUR-GITHUB-REPOSITORY-LINK-HERE)**
+
+---
+
+# 📸 Screenshots
+
+Add screenshots of your application below.
+
+### 🏠 Dashboard
+
+```text
+ADD DASHBOARD SCREENSHOT HERE
+```
+
+### 🌿 Crop Disease Detection
+
+```text
+ADD DISEASE DETECTION SCREENSHOT HERE
+```
+
+### 🎙️ Voice Assistant
+
+```text
+ADD VOICE ASSISTANT SCREENSHOT HERE
+```
+
+### 📊 Disease History
+
+```text
+ADD HISTORY SCREENSHOT HERE
+```
+
+> You can upload screenshots directly to the repository and use relative Markdown image paths, which GitHub supports.
+
+Example:
+
+```markdown
+![AgriVision AI Dashboard](./screenshots/dashboard.png)
+```
+
+---
+
+# 🎯 Objectives
+
+The major objectives of AgriVision AI are:
+
+1. Detect crop diseases using Artificial Intelligence.
+2. Provide farmers with quick and understandable disease information.
+3. Provide treatment and prevention recommendations.
+4. Enable voice-based interaction.
+5. Support multilingual communication.
+6. Create an accessible and farmer-friendly agricultural platform.
+7. Reduce delays in identifying crop diseases.
+
+---
+
+# 🌾 Impact
+
+AgriVision AI aims to contribute towards:
+
+* Early crop disease detection
+* Reduced crop losses
+* Improved farmer awareness
+* Faster agricultural decision-making
+* Better access to agricultural information
+* Increased accessibility of AI technology in rural areas
+
+---
+
+# 🔮 Future Scope
+
+Future improvements may include:
+
+* 🤖 Improved disease classification accuracy
+* 🌾 Support for additional crops and diseases
 * 📍 Location-based agricultural recommendations
-* 🌦️ Weather-based disease risk prediction
-* 🧪 Fertilizer and pesticide recommendations
-* 🗣️ More regional languages
-* 📱 Progressive Web App / mobile application
-* 📡 Offline functionality for rural areas
-* 👨‍🌾 Farmer community and expert consultation
-* 📈 Crop health monitoring over time
+* 🌦️ Weather-based disease prediction
+* 🧪 Fertilizer recommendations
+* 🗣️ Additional regional languages
+* 📱 Dedicated Android / iOS application
+* 📡 Offline functionality for low-connectivity areas
+* 👨‍🌾 Expert consultation
+* 📈 Long-term crop health monitoring
+* 🛰️ Satellite and remote-sensing based crop monitoring
 
 ---
 
-## 🤝 Contributors
+# 🤝 Team
 
-**Team AgriVision AI**
+### Team AgriVision AI
 
-Developed as an AI-powered agricultural technology project.
+**Team Members**
 
----
-
-## 📄 License
-
-This project is intended for educational, research, and demonstration purposes.
+* 👩‍💻 Sudiksha Sawant
+* 👨‍💻 Om Rane
 
 ---
 
-## ⭐ Support
+# 📜 License
 
-If you find this project useful, consider giving the repository a ⭐ on GitHub.
+This project is developed for **educational, research, innovation, and demonstration purposes**.
 
-**AgriVision AI — Empowering Farmers with Artificial Intelligence 🌱🤖**
+---
+
+# ⭐ Support
+
+If you find **AgriVision AI** useful or interesting, consider giving this repository a ⭐ on GitHub!
+
+---
+
+<div align="center">
+
+### 🌱 AgriVision AI
+
+**AI for Smarter Farming • Technology for Better Agriculture**
+
+🌾 **Detect. Understand. Act.**
+
+</div>
